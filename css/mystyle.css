@@ -1079,6 +1079,7 @@ body .thumbnail-container .product-thumbnail img {
 .header-icons {
   width: 24px;
   height: 24px;
+  display: block;
   color: #242222;
 }
 
@@ -1092,4 +1093,14 @@ body .thumbnail-container .product-thumbnail img {
   left: initial;
   right: 0;
   top: 20px;
+}
+
+.box-top .col-info #_desktop_cart .header i {
+  width: 24px;
+  height: 24px;
+  display: block;
+  color: transparent;
+  background-image: url("../img/card-icon.svg");
+  background-size: cover;
+  background-position: center;
 }
