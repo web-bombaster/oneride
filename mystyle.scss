@@ -909,6 +909,11 @@ body .thumbnail-container .product-thumbnail img {
 	text-transform: uppercase;
 	text-decoration: underline;
 	color: #f11d22;
+
+	&:hover {
+		color: #f11d22;
+		text-decoration: none;
+	}
 }
 
 /* b06 */
@@ -1076,4 +1081,36 @@ body .thumbnail-container .product-thumbnail img {
 	@media screen and (max-width: 767px) {
 		display: block;
 	}
+}
+
+.box-top #leo_search_block_top .title_block,
+.box-top .col-info .popup-over a.popup-title,
+.box-top .col-info #_desktop_cart .header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&::before,
+	i {
+		display: none;
+	}
+}
+
+.header-icons {
+	width: 24px;
+	height: 24px;
+	color: #242222;
+}
+
+.box-top .col-info #_desktop_cart .header .cart-products-count {
+	background-color: #f11d22;
+	height: 19px;
+	min-width: 19px;
+	border-radius: 19px;
+	line-height: 22px;
+
+	transform: initial;
+	left: initial;
+	right: 0;
+	top: 20px;
 }

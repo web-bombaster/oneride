@@ -882,6 +882,10 @@ body .thumbnail-container .product-thumbnail img {
   text-decoration: underline;
   color: #f11d22;
 }
+.b05_link:hover {
+  color: #f11d22;
+  text-decoration: none;
+}
 
 /* b06 */
 .b06 {
@@ -1054,4 +1058,38 @@ body .thumbnail-container .product-thumbnail img {
   .b06_slider__pagination {
     display: block;
   }
+}
+
+.box-top #leo_search_block_top .title_block,
+.box-top .col-info .popup-over a.popup-title,
+.box-top .col-info #_desktop_cart .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box-top #leo_search_block_top .title_block::before,
+.box-top #leo_search_block_top .title_block i,
+.box-top .col-info .popup-over a.popup-title::before,
+.box-top .col-info .popup-over a.popup-title i,
+.box-top .col-info #_desktop_cart .header::before,
+.box-top .col-info #_desktop_cart .header i {
+  display: none;
+}
+
+.header-icons {
+  width: 24px;
+  height: 24px;
+  color: #242222;
+}
+
+.box-top .col-info #_desktop_cart .header .cart-products-count {
+  background-color: #f11d22;
+  height: 19px;
+  min-width: 19px;
+  border-radius: 19px;
+  line-height: 22px;
+  transform: initial;
+  left: initial;
+  right: 0;
+  top: 20px;
 }
