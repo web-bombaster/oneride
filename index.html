@@ -454,6 +454,8 @@
 	<link rel="stylesheet" href="https://oneride.eu/themes/at_movic/modules/appagebuilder/views/css/profiles/profile1513923710.css" type="text/css" media="all">
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.css" /> -->
+
 	<link rel="stylesheet" href="./css/mystyle.css">
 
 
@@ -5324,18 +5326,33 @@
 	</script>
 
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script> -->
 
 	<script>
 		if (document.querySelector(".bigSlider")) {
 			const bigSlider = new Swiper(".bigSlider", {
-				slidesPerView: 1,
+				// grabCursor: true,
+				// effect: "fade",
 				centeredSlides: true,
+				// slidesPerView: 1,
+				// slidesPerView: "auto",
+				// slidesPerGroup: 1,
+				// loopFillGroupWithBlank: true,
+				// loopFillGroupWithBlank: false,
 				spaceBetween: 30,
+				// initialSlide: 2,
+				// loopAdditionalSlides: 3,
+				// loopedSlides: 3,
+
 				loop: true,
+				// loopAddBlankSlides: false,
+
 				autoplay: {
-					delay: 2500,
-					disableOnInteraction: true,
+					delay: 4500,
+					disableOnInteraction: false,
+					pauseOnMouseEnter: true,
 				},
+				// pauseOnMouseEnter: true,
 				navigation: {
 					nextEl: ".bigSlider__next",
 					prevEl: ".bigSlider__prev",
