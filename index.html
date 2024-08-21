@@ -1430,7 +1430,7 @@
 											</h2>
 
 											<div class="products-slider__box">
-												<div class="products-slider swiper plist-dsimple">
+												<div class="products-slider js-prod_sl_1 swiper plist-dsimple">
 													<div class="swiper-wrapper products-slider__wrapper">
 														<div class="swiper-slide products-slider__item">
 															<div class="item first">
@@ -2815,9 +2815,9 @@
 													</div>
 												</div>
 
-												<div class="swiper-button-next products-slider__next"></div>
-												<div class="swiper-button-prev products-slider__prev"></div>
-												<div class="swiper-pagination products-slider__pagination"></div>
+												<div class="swiper-button-next  products-slider__next js-prod_sl_1_next"></div>
+												<div class="swiper-button-prev  products-slider__prev js-prod_sl_1_prev"></div>
+												<div class="swiper-pagination  products-slider__pagination js-prod_sl_1_pagination"></div>
 
 											</div>
 
@@ -2889,7 +2889,7 @@
 												</h2>
 
 												<div class="products-slider__box">
-													<div class="products-slider swiper plist-dsimple">
+													<div class="products-slider js-prod_sl_2 swiper plist-dsimple">
 														<div class="swiper-wrapper products-slider__wrapper">
 															<div class="swiper-slide products-slider__item">
 																<div class="item first">
@@ -4294,9 +4294,9 @@
 														</div>
 													</div>
 
-													<div class="swiper-button-next products-slider__next"></div>
-													<div class="swiper-button-prev products-slider__prev"></div>
-													<div class="swiper-pagination products-slider__pagination"></div>
+													<div class="swiper-button-next products-slider__next js-prod_sl_2_next"></div>
+													<div class="swiper-button-prev products-slider__prev js-prod_sl_2_prev"></div>
+													<div class="swiper-pagination products-slider__pagination js-prod_sl_2_pagination"></div>
 
 												</div>
 
@@ -5380,8 +5380,8 @@
 			});
 		};
 
-		if (document.querySelector(".products-slider")) {
-			const productsSlider = new Swiper(".products-slider", {
+		if (document.querySelector(".js-prod_sl_1")) {
+			const productsSlider = new Swiper(".js-prod_sl_1", {
 				slidesPerView: 1,
 				grid: {
 					rows: 2,
@@ -5420,15 +5420,66 @@
 					},
 				},
 				navigation: {
-					nextEl: ".products-slider__next",
-					prevEl: ".products-slider__prev",
+					nextEl: ".js-prod_sl_1_next",
+					prevEl: ".js-prod_sl_1_prev",
 				},
 				pagination: {
-					el: ".products-slider__pagination",
+					el: ".js-prod_sl_1_pagination",
 					clickable: true,
 				},
 			});
 		};
+
+		if (document.querySelector(".js-prod_sl_2")) {
+			const productsSlider = new Swiper(".js-prod_sl_2", {
+				slidesPerView: 1,
+				grid: {
+					rows: 2,
+				},
+				spaceBetween: 16,
+				loop: true,
+
+				breakpoints: {
+					400: {
+						slidesPerView: 2,
+						spaceBetween: 16,
+						grid: {
+							rows: 2,
+						},
+					},
+					768: {
+						slidesPerView: 3,
+						spaceBetween: 0,
+						grid: {
+							rows: 1,
+						},
+					},
+					992: {
+						slidesPerView: 4,
+						spaceBetween: 0,
+						grid: {
+							rows: 1,
+						},
+					},
+					1200: {
+						slidesPerView: 5,
+						spaceBetween: 0,
+						grid: {
+							rows: 1,
+						},
+					},
+				},
+				navigation: {
+					nextEl: ".js-prod_sl_2_next",
+					prevEl: ".js-prod_sl_2_prev",
+				},
+				pagination: {
+					el: ".js-prod_sl_2_pagination",
+					clickable: true,
+				},
+			});
+		};
+
 
 		if (document.querySelector(".b06_slider")) {
 			const b06slider = new Swiper(".b06_slider", {

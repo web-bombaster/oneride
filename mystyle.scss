@@ -647,9 +647,9 @@ body .thumbnail-container .product-thumbnail img {
 		bottom: 0;
 	}
 
-	// @media screen and (max-width: 767px) {
-	// 	display: none;
-	// }
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
 }
 .products-slider__prev {
 	right: calc(100% + 20px);
@@ -664,9 +664,9 @@ body .thumbnail-container .product-thumbnail img {
 		top: initial;
 		bottom: 0;
 	}
-	// @media screen and (max-width: 767px) {
-	// 	display: none;
-	// }
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
 }
 .products-slider__pagination {
 	display: none;

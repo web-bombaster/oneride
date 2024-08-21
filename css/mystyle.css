@@ -620,6 +620,11 @@ body .thumbnail-container .product-thumbnail img {
     bottom: 0;
   }
 }
+@media screen and (max-width: 767px) {
+  .products-slider__next {
+    display: none;
+  }
+}
 
 .products-slider__prev {
   right: calc(100% + 20px);
@@ -633,6 +638,11 @@ body .thumbnail-container .product-thumbnail img {
     margin-right: 4px;
     top: initial;
     bottom: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .products-slider__prev {
+    display: none;
   }
 }
 
